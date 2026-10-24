@@ -1,0 +1,249 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#ffb65c">
+  <title>Amitha & Akhil | Wedding Invitation</title>
+
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Great+Vibes&family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@400;500;600;700&display=swap" rel="stylesheet">
+
+  <link rel="stylesheet" href="style.css">
+  <audio id="weddingMusic" loop preload="auto">
+    <source src="music/wedding-song1.mpeg" type="audio/mpeg">
+</audio>
+</head>
+<body>
+    <!-- Falling flowers on the main invitation page -->
+<div id="flowerFall" aria-hidden="true"></div>
+
+  <!-- PAGE 1: OPENING ENVELOPE — UNCHANGED -->
+  <main id="envelopeScreen" class="envelope-screen">
+
+    <div class="envelope-decorations" aria-hidden="true">
+      <span class="corner-flower top-left">🪷</span>
+      <span class="corner-flower top-right">🪷</span>
+      <span class="corner-flower bottom-left">❋</span>
+      <span class="corner-flower bottom-right">❋</span>
+
+      <div class="garland garland-left">✿<br>❀<br>✿<br>❀<br>✿</div>
+      <div class="garland garland-right">✿<br>❀<br>✿<br>❀<br>✿</div>
+
+      <span class="floating-flower flower-a">✿</span>
+      <span class="floating-flower flower-b">❀</span>
+      <span class="floating-flower flower-c">✿</span>
+      <span class="floating-flower flower-d">❀</span>
+
+      <div class="diya diya-left">
+        <span class="diya-flame">♦</span>
+        <span class="diya-bowl"></span>
+        <span class="diya-stem"></span>
+        <span class="diya-base"></span>
+      </div>
+
+      <div class="diya diya-right">
+        <span class="diya-flame">♦</span>
+        <span class="diya-bowl"></span>
+        <span class="diya-stem"></span>
+        <span class="diya-base"></span>
+      </div>
+    </div>
+
+    <header class="envelope-heading">
+      <div class="small-lotus">❀</div>
+      <p class="eyebrow">A JOYOUS CELEBRATION OF LOVE</p>
+      <p class="envelope-subtitle">With the blessings of our families</p>
+    </header>
+
+    <div class="envelope-wrap">
+      <div class="envelope-back"></div>
+
+      <div class="letter-paper">
+        <span class="letter-ornament">❦</span>
+        <p class="letter-caption">You are warmly invited to celebrate</p>
+        <p class="letter-names">Amitha <span>&</span> Akhil</p>
+        <div class="letter-divider"></div>
+        <p class="letter-caption">A beautiful beginning awaits</p>
+      </div>
+
+      <div class="envelope-pocket"></div>
+      <div class="envelope-flap"></div>
+
+      <button id="openInvitation" class="seal-button"
+              type="button" aria-label="Open wedding invitation">
+        ❀
+      </button>
+    </div>
+
+    <p id="tapInstruction" class="tap-instruction">TAP THE SEAL TO OPEN</p>
+    <p class="envelope-footer">Love • Blessings • Togetherness</p>
+  </main>
+
+
+  <!-- PAGE 2: MAIN INVITATION -->
+  <main id="invitationScreen" class="invitation-screen" hidden>
+
+    <div class="invitation-card">
+
+      <div class="top-decoration" aria-hidden="true">
+        <span>❀</span><span>🔱</span><span>❀</span>
+      </div>
+
+      <p class="eyebrow invitation-eyebrow">TOGETHER WITH OUR FAMILIES</p>
+
+      <div class="ornament-divider" aria-hidden="true">
+        <span></span><b>❋</b><span></span>
+      </div>
+
+      <p class="welcome-line">With joyful hearts,</p>
+      <p class="invitation-message">
+        We invite you to celebrate the beginning of our forever.
+      </p>
+
+      <!-- COUPLE NAMES AND PHOTO -->
+      <section class="couple-section">
+        <h1 class="couple-names">
+          <span>Amitha</span>
+          <span class="name-ampersand">&</span>
+          <span>Akhil</span>
+        </h1>
+
+        <div class="photo-frame">
+          <div class="photo-inner">
+            <img
+              src="images/couple.jpg"
+              alt="Amitha and Akhil"
+              class="couple-photo"
+            >
+          </div>
+          <span class="photo-flower photo-flower-left" aria-hidden="true">❀</span>
+          <span class="photo-flower photo-flower-right" aria-hidden="true">❀</span>
+        </div>
+
+        <div class="ring-decoration" aria-label="Wedding rings">
+          <svg viewBox="0 0 120 58" role="img" aria-label="Two interlocking wedding rings">
+            <defs>
+              <linearGradient id="ringGold" x1="0" y1="0" x2="1" y2="1">
+                <stop offset="0%" stop-color="#ffe9a1"/>
+                <stop offset="45%" stop-color="#c68a20"/>
+                <stop offset="75%" stop-color="#fff0b6"/>
+                <stop offset="100%" stop-color="#a96b12"/>
+              </linearGradient>
+            </defs>
+            <circle cx="47" cy="32" r="19" fill="none" stroke="url(#ringGold)" stroke-width="5"/>
+            <circle cx="73" cy="32" r="19" fill="none" stroke="url(#ringGold)" stroke-width="5"/>
+            <path d="M46 8 L51 14 L46 19 L41 14 Z" fill="#fff1b7" stroke="#bd8422" stroke-width="1"/>
+            <path d="M74 8 L79 14 L74 19 L69 14 Z" fill="#fff1b7" stroke="#bd8422" stroke-width="1"/>
+          </svg>
+        </div>
+
+        <p class="couple-caption">Two hearts, one beautiful journey</p>
+      </section>
+
+      <!-- WEDDING CELEBRATION -->
+      <section class="event-section">
+        <div class="section-flower" aria-hidden="true">❀</div>
+        <p class="section-kicker">THE DAY WE BEGIN FOREVER</p>
+        <h2 class="section-heading">The Wedding Celebration</h2>
+
+        <!-- THIN DATE BOX -->
+        <div class="date-card">
+          <p class="event-weekday">SUNDAY</p>
+          <p class="event-month">NOVEMBER</p>
+          <p class="event-date">29</p>
+          <p class="event-year">2026</p>
+          <div class="event-line"></div>
+          <p class="event-time">11:45 AM</p>
+
+          <!-- COUNTDOWN DIRECTLY BELOW THE DATE -->
+          <div class="date-countdown-divider">
+            <span></span><b>✧</b><span></span>
+          </div>
+
+          <p class="countdown-title">COUNTING DOWN TO OUR SPECIAL DAY</p>
+
+          <div id="countdown" class="countdown-grid" aria-label="Time until the wedding">
+            <div class="countdown-item">
+              <span id="days" class="countdown-number">--</span>
+              <span class="countdown-label">DAYS</span>
+            </div>
+            <div class="countdown-item">
+              <span id="hours" class="countdown-number">--</span>
+              <span class="countdown-label">HOURS</span>
+            </div>
+            <div class="countdown-item">
+              <span id="minutes" class="countdown-number">--</span>
+              <span class="countdown-label">MINUTES</span>
+            </div>
+            <div class="countdown-item">
+              <span id="seconds" class="countdown-number">--</span>
+              <span class="countdown-label">SECONDS</span>
+            </div>
+          </div>
+
+          <p id="countdownMessage" class="countdown-message">
+            Every second brings us closer to our special day.
+          </p>
+        </div>
+      </section>
+
+      <!-- VENUE WITH THIN BORDER AND SIMPLE DIRECTIONS BUTTON -->
+      <section class="venue-section">
+        <div class="venue-decoration" aria-hidden="true">❀ ❦ ❀</div>
+        <p class="section-kicker">JOIN US FOR THE CELEBRATION</p>
+        <h2 class="section-heading">Our Wedding Venue</h2>
+
+        <div class="venue-card">
+          <div class="location-icon" aria-hidden="true">
+            <svg viewBox="0 0 48 48" role="img" aria-label="Location pin">
+              <path d="M24 43S8 27.5 8 18.5a16 16 0 1 1 32 0C40 27.5 24 43 24 43Z"
+                    fill="#bd3153"/>
+              <circle cx="24" cy="18" r="6.5" fill="#fff1d9"/>
+              <circle cx="24" cy="18" r="2.5" fill="#bd3153"/>
+            </svg>
+          </div>
+
+          <h3 class="venue-name">Sharadanjali SNDP Hall</h3>
+          <p class="venue-address">
+            Maravanthuruthu<br>
+            Vaikom, Kerala
+          </p>
+
+          <a
+            class="directions-button"
+            href="https://www.google.com/maps/search/?api=1&query=Sharadanjali+SNDP+Hall+Maravanthuruthu+Vaikom"
+            target="_blank"
+            rel="noopener noreferrer"
+          >
+            <svg viewBox="0 0 24 24" aria-hidden="true">
+              <path d="M12 21s7-6.2 7-12a7 7 0 1 0-14 0c0 5.8 7 12 7 12Z"
+                    fill="none" stroke="currentColor" stroke-width="1.8"/>
+              <circle cx="12" cy="9" r="2.5" fill="none"
+                      stroke="currentColor" stroke-width="1.8"/>
+            </svg>
+            <span>GET DIRECTIONS</span>
+            <span class="map-arrow" aria-hidden="true">↗</span>
+          </a>
+        </div>
+      </section>
+
+      <!-- CLOSING -->
+      <footer class="invitation-footer">
+        <div class="footer-ornament" aria-hidden="true">❦ ❀ ❦</div>
+        <p class="closing-message">
+          Your presence and blessings will make our day truly special.
+        </p>
+        <p class="closing-title">With love,</p>
+        <p class="closing-names">Amitha & Akhil</p>
+        <div class="footer-lotus" aria-hidden="true">❀</div>
+      </footer>
+
+    </div>
+  </main>
+
+  <script src="script.js"></script>
+</body>
+</html>
